@@ -15,10 +15,6 @@ function dataHandling(n){
     console.log('Hobi : '+n[i][4]+'\n');
 
   }
-  /*console.log('Nomor ID: '+input[0][0]);
-  console.log('Nama Lengkap: '+input[0][1]);
-  console.log('TTL :'+input[0][2]+' '+input[0][3]);
-  console.log('Hobi :'+input[0][4]+'\n');*/
   return "Data Handling Berhasil!";
 }
 
