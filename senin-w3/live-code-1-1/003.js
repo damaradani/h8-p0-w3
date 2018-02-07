@@ -54,5 +54,19 @@ for(var i = 1; i <= height2; i++){
     nilai--;
   }
   console.log(hasil2);
+}
 
+//versi Nested Looping dari terkecil sampai terbesar
+console.log('================');
+var height3 = 5;
+
+for (var i = 1; i <= height3; i++){
+  var hasil3 = '';
+  var nilai3 = 1;
+
+  for (j = 0; j < i; j++){
+    hasil3 += nilai3;
+    nilai3++;
+  }
+  console.log(hasil3);
 }
