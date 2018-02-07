@@ -50,5 +50,5 @@ if (name ===''){
   taxID = 'ABCD-'+(2017-age);
   console.log(name+'\n'+age+'\n'+taxID);//contoh output
 }else{
-  
+  console.log('citizenship tidak boleh kosong');
 }
