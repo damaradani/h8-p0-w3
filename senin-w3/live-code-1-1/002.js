@@ -35,20 +35,20 @@ Dipersilahkan mengganti nilai dari name, age dan citizenship secara manual, dan 
 
 // Buat code disini
 var name = 'Dani';
-var age = 25;
-var citizenship = 'Indonesia';
+var age = 17;
+var citizenship = 'wkwkland';
 var taxID;
 
 if (name ===''){
  console.log('Harus memiliki nama, tidak boleh kosong');
-}else if(age <=17){
+}else if(age < 17){
   console.log('BELUM CUKUP UMUR!');
-}else if(citizenship == 'wkwkland'){
-  taxID = 'wkwkland-'+(2017-age);
-  console.log(name+'\n'+age+'\n'+taxID);//contoh output
-}else if(citizenship == 'Indonesia'){
-  taxID = 'ABCD-'+(2017-age);
-  console.log(name+'\n'+age+'\n'+taxID);//contoh output
-}else{
-  console.log('citizenship tidak boleh kosong');
+}else {
+  if(citizenship == 'wkwkland'){
+    taxID = 'WKWK-'+(2017-age);
+    console.log(name+'\n'+age+'\n'+taxID);//contoh output
+  }else {
+    taxID = 'ABCD-'+(2017-age);
+    console.log(name+'\n'+age+'\n'+taxID);//contoh output
+  }
 }

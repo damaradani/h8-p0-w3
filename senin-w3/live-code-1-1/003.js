@@ -40,3 +40,19 @@ while(rows > 0){
   rows--;
   height--;
 }
+
+//Versi Nested Loopings dari Terbesar sampai terkecil
+console.log('================');
+var height2 = 5;
+
+for(var i = 1; i <= height2; i++){
+  var hasil2 = '';
+  var nilai = height2;
+
+  for(var j = 1; j <= i; j++){
+    hasil2 += nilai;
+    nilai--;
+  }
+  console.log(hasil2);
+
+}

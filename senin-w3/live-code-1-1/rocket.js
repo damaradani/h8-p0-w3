@@ -25,7 +25,7 @@ Hati-hati, yang ditampilkan adalah sebuah string, bukan angka!
 tinggi kotak sesuai dengan nilai variable height!
 */
 
-// SKELETON CODE (Code Sample)
+// SKELETON CODE (Code Sample) pake array:
 function drawThreeColBox(height){
 var hasil2 ='';
 //var height =5;
@@ -46,7 +46,25 @@ for (height; height > 0; height--){
   arr3 += 3;
   //return hasil2;
 }
-
 }
 
-console.log(drawThreeColBox(4));
+drawThreeColBox(4);
+drawThreeColBox2(5);
+
+
+function drawThreeColBox2(height2){
+
+  //var rows = height2*3;
+  var number = 1;
+  var tampung = '';
+  for( var i = 0; i < height2; i++){
+    var hasil = '';
+
+    for (var j = 0; j < 3; j++){
+      hasil += number + ' ';
+      number++;
+    }
+
+    console.log(hasil);
+  }
+}
