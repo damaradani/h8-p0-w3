@@ -28,10 +28,10 @@ Dipersilahkan mengganti nilai dari name, age dan citizenship secara manual, dan 
 
 // SKELETON CODE (Code Sample)
 
-var name; // silakan berikan nilai bebas
-var age; // silakan berikan nilai bebas
-var citizenship; // silakan berikan nilai bebas
-var taxId; // nilainya jangan di-assign langsung. gunakan program untuk mengisi ini!
+//var name; // silakan berikan nilai bebas
+//var age; // silakan berikan nilai bebas
+//var citizenship; // silakan berikan nilai bebas
+//var taxId; // nilainya jangan di-assign langsung. gunakan program untuk mengisi ini!
 
 // Buat code disini
 var name = 'Dani';
