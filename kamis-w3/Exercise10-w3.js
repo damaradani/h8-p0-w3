@@ -23,7 +23,7 @@ function perkalianUnik(arr){
     //output newArr setelah splice di i = 0
     //adalah [4, 6]
 
-    hasilKali = 1;//menentukan nilai awal untuk hasil perkalian dari 'newArr' (harus 1)
+    var hasilKali = 1;//menentukan nilai awal untuk hasil perkalian dari 'newArr' (harus 1)
                   //karena apabila nilai nya '0' maka semua hasil yang di kali akan 0
 
     //pengulangan untuk mengkalikan isi dari array newArr yaitu 4 * 6
