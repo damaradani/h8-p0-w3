@@ -1,0 +1,18 @@
+//Pseudocode exercise 2 week 3
+
+SET 'input' with "hello world!"
+
+CREATE FUNCTION 'balikString' with parameter 'input'
+    SET 'balikKata' with ""
+    FOR each word/letter in 'input' DO
+        STORE 'balikKata' ADD with last word/letter from 'input'
+    END FOR
+
+    IF 'balikKata' equals with 'input' then
+        DISPLAY 'true'
+    ELSE
+        DISPLAY 'false'
+    END IF
+
+
+CALL FUNCTION balikString(input)
