@@ -19,8 +19,3 @@ CREATE FUNCTION 'balikString' with parameter 'input'
 
 
 CALL FUNCTION balikString(input)
-berarti di bawah
->STORE 'balikKata' ADD with last word/letter from 'input'
-
-di tambahin ini?
->last word push by 1
