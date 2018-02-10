@@ -1,0 +1,56 @@
+//Pseudocode Exercise 4 week 3 (Array Join, Split, Splice, Sort)
+
+SET 'op' with ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"]
+
+CREATE FUNCTION 'dataHandling2' with parameter 'arr'
+
+    SPLICE 'arr' with parameter (1, 1, "Roman Alamsyah Elsharawy")
+    SPLICE 'arr' with parameter (2, 1, "Provinsi Bandar Lampung")
+    SPLICE 'arr' with parameter (4, 1, "Pria", "SMA Internasional Metro")
+
+    SET 'bulan' with 'arr[3]' SPLIT with parameter ('/')
+    SET 'bulanJoin' with 'bulan' JOIN with parameter ('-')
+    SET 'bulanStr' with ''
+
+    CASE based on 'bulan[2]'
+        CASE '01' DO
+            STORE 'bulanStr' with "Januari"
+        CASE '02' DO
+            STORE 'bulanStr' with "Februari"
+        CASE '03' DO
+            STORE 'bulanStr' with "Maret"
+        CASE '04' DO
+            STORE 'bulanStr' with "April"
+        CASE '05' DO
+            STORE 'bulanStr' with "Mei"
+        CASE '06' DO
+            STORE 'bulanStr' with "Juni"
+        CASE '07' DO
+            STORE 'bulanStr' with "Juli"
+        CASE '08' DO
+            STORE 'bulanStr' with "Agustus"
+        CASE '09' DO
+            STORE 'bulanStr' with "September"
+        CASE '10' DO
+            STORE 'bulanStr' with "Oktober"
+        CASE '11' DO
+            STORE 'bulanStr' with "November"
+        CASE '12' DO
+            STORE 'bulanStr' with "Desember"
+        DEFAULT
+            STORE 'bulanStr' with "Bulan hanya sampai 12"
+    END CASE
+
+    SET 'bulanSort' with SORT 'bulan' by Descending
+
+    SET 'nama' with 'arr[1]' SLICE with parameter(0, 15)
+
+    DISPLAY 'arr'
+    DISPLAY 'bulanStr'
+    DISPLAY 'bulanSort'
+    DISPLAY 'bulanJoin'
+    DISPLAY 'nama'
+
+END FUNCTION
+
+CALL FUNCTION 'dataHandling2(op)'

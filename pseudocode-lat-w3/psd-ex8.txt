@@ -1,0 +1,24 @@
+//Pseudocode Exercise 8 week 3 - Pasangan Angka Terbesar
+
+CREATE FUNCTION 'pasanganTerbesar()' with parameter 'num'
+
+  SET 'numStr' with CONVERT 'num' to STRING
+  SET 'Indeks1' with 1
+  SET 'arrNUm' with empty array
+
+  FOR each index of 'numStr' DO
+      STORE 'arrNum' with 'numStr[current index]'+'numStr[Indeks1]'
+      Indeks1 added by 1
+  END FOR
+
+  SORT 'arrNum' by Descending
+
+  DISPLAY the first index of 'arrNum' value
+
+END FUNCTION
+
+CALL FUNTION 'pasanganTerbesar()' with parameter value 641573
+CALL FUNTION 'pasanganTerbesar()' with parameter value 12783456
+CALL FUNTION 'pasanganTerbesar()' with parameter value 910233
+CALL FUNTION 'pasanganTerbesar()' with parameter value 71856421
+CALL FUNTION 'pasanganTerbesar()' with parameter value 79918293

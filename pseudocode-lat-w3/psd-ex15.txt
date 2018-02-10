@@ -1,0 +1,29 @@
+//Pseudocode Exercise 15 week 3 - Mengelompokkan Hewan
+
+CREATE FUNCTION 'groupAnimals()' with parameter 'animals'
+
+    SET 'arrHasil' with empty array
+    SET 'Indeks1' with 0
+
+    SORT 'animals' by ascending with only the first letter
+
+    FOR each index of 'animals' DO
+
+        IF 'arrHasil' equals with empty then
+            STORE 'arrHasil' with array with value 'animals[current index]'
+        ELSE IF first letter of 'arrHasil[Indeks1]' equals with first letter of 'animals[current index]' then
+            STORE 'arrHasil[Indeks1]' with 'animals[current Index]'
+        ELSE
+            STORE 'arrHasil' with array with value 'animals[current index]'
+            Indeks1 added by 1
+        END IF
+
+    END FOR
+
+    DISPLAY 'arrHasil'
+
+END FUNCTION
+
+
+CALL FUNTION 'groupAnimals()' with parameter value ['cacing', 'ayam', 'kuda', 'anoa', 'kancil']
+CALL FUNTION 'groupAnimals()' with parameter value ['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]

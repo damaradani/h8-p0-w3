@@ -1,0 +1,32 @@
+//Pseudocode Exercise 11 week 3 - Deret Aritmatika
+
+CREATE FUNCTION 'tentukanDeretAritmatika()' with parameter 'arr'
+
+    SET 'bedaAngka' with empty array
+    SET 'Indeks1' with 1
+
+    FOR each index of 'arr' DO
+        STORE 'bedaAngka' with 'arr[Indeks1]' reduced by 'arr[current index]'
+        Indeks1 added by 1
+    END FOR
+
+    STORE 'Indeks1' with 1
+
+    FOR each index of 'bedaAngka' DO
+
+        IF 'bedaAngka[current index]' not equals with 'bedaAngka[Indeks1]' then
+            DISPLAY 'false'
+            STOP the FUNCTION
+
+    END FOR
+
+    DISPLAY 'true'
+
+END FUNCTION
+
+
+CALL FUNTION 'tentukanDeretAritmatika()' with parameter value [1, 2, 3, 4, 5, 6]
+CALL FUNTION 'tentukanDeretAritmatika()' with parameter value [2, 4, 6, 12, 24]
+CALL FUNTION 'tentukanDeretAritmatika()' with parameter value [2, 4, 6, 8]
+CALL FUNTION 'tentukanDeretAritmatika()' with parameter value [2, 6, 18, 54]
+CALL FUNTION 'tentukanDeretAritmatika()' with parameter value [1, 2, 3, 4, 7, 9]

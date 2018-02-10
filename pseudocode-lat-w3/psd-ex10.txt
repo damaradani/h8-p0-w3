@@ -1,0 +1,35 @@
+//Pseudocode Exercise 10 week 3 - Perkalian Unik
+
+CREATE FUNCTION 'perkalianUnik()' with parameter 'arr'
+
+    SET 'arrHasil' with empty array
+
+    FOR each index of 'arr' DO
+        SET 'newArr' with empty array
+        
+        FOR each index of 'arr' DO
+            STORE 'newArr' with current index of 'arr' value
+        END FOR
+
+        SPLICE 'newArr' with parameter(current index,1)
+
+        SET 'hasilKali' with 1
+
+        FOR each index of 'newArr' DO
+            STORE 'hasilKali' with 'hasilKali' times current index of 'arr' value
+        END FOR
+
+        STORE 'arrHasil' with 'hasilKali'
+
+    END FOR
+
+    DISPLAY 'arrHasil'
+
+END FUNCTION
+
+
+CALL FUNTION 'perkalianUnik()' with parameter value [2, 4, 6]
+CALL FUNTION 'perkalianUnik()' with parameter value [1, 2, 3, 4, 5]
+CALL FUNTION 'perkalianUnik()' with parameter value [1, 4, 3, 2, 5]
+CALL FUNTION 'perkalianUnik()' with parameter value [1, 3, 3, 1]
+CALL FUNTION 'perkalianUnik()' with parameter value [2, 1, 8, 10, 2]

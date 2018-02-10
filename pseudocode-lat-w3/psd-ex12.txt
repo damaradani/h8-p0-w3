@@ -1,0 +1,35 @@
+//Pseudocode Exercise 12 week 3 - Deret Geometri
+
+CREATE FUNCTION 'tentukanDeretGeometri()' with parameter 'arr'
+
+    SET 'bedaAngka' with empty Array
+    SET 'indeks1' with 1
+
+    FOR each index of 'arr' DO
+
+        STORE 'bedaAngka' with 'arr[Indeks1]' divided by 'arr[current index]'
+        'indeks1' added by 1
+
+    END FOR
+
+    STORE 'indeks1' with 1
+
+    FOR each index of 'bedaAngka' DO
+
+        IF 'bedaAngka[current index]' not equals with 'bedaAngka[Indeks1]' then
+
+            DISPLAY 'false'
+            STOP the FUNCTION
+
+    END FOR
+
+    DISPLAY 'true'
+
+END FUNCTION
+
+
+CALL FUNTION 'tentukanDeretGeometri()' with parameter value [1, 3, 9, 27, 81]
+CALL FUNTION 'tentukanDeretGeometri()' with parameter value [2, 4, 8, 16, 32]
+CALL FUNTION 'tentukanDeretGeometri()' with parameter value [2, 4, 6, 8]
+CALL FUNTION 'tentukanDeretGeometri()' with parameter value [2, 6, 18, 54]
+CALL FUNTION 'tentukanDeretGeometri()' with parameter value [1, 2, 3, 4, 7, 9]

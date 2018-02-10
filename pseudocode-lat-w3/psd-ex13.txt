@@ -1,0 +1,38 @@
+//Pseudocode Exercise 13 week 3 - Target Terdekat
+
+CREATE FUNCTION 'targetTerdekat()' with parameter 'arr'
+
+    SET 'arrO' with empty array
+    SET 'arrX' with empty array
+
+    FOR each index of 'arr' DO
+
+        IF 'arr[current index]' equals with "O" then
+            STORE 'arrO' with current index
+        ELSE IF 'arr[current index]' equals with "x" then
+            STORE 'arrX' with current index
+        ELSE
+            DO LOOPING again
+
+    END FOR
+
+    SET 'jarakTerdekat' with 0
+
+    IF 'arrO[0]' less than 'arrX[0]' then
+        STORE 'jarakTerdekat' with 'arrX[0]' decrease by 'arrO[0]'
+    ELSE IF 'arrO[0]' more than 'arrX[0]' then
+        STORE 'jarakTerdekat' with 'arrO[0]' decrese by 'arrX[last index]'
+    ELSE
+        STORE 'jarakTerdekat' with 0
+    END IF
+
+    DISPLAY 'jarakTerdekat'
+
+END FUNCTION
+
+
+CALL FUNCTION 'targetTerdekat()' with parameter value ['', '', 'o', '', '', 'x', '', 'x']
+CALL FUNCTION 'targetTerdekat()' with parameter value ['o', '', '', '', 'x', 'x', 'x']
+CALL FUNCTION 'targetTerdekat()' with parameter value ['x', '', '', '', 'x', 'x', 'o', '']
+CALL FUNCTION 'targetTerdekat()' with parameter value ['', '', 'o', '']
+CALL FUNCTION 'targetTerdekat()' with parameter value ['', 'o', '', 'x', 'x', '', '', 'x']

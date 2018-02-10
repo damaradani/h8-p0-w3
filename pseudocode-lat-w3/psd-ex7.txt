@@ -1,0 +1,15 @@
+//Pseudocode Exercise 7 week 3 - Hitung jumlah kata
+
+CREATE FUNCTION 'hitungJumlahKata()' with parameter 'kalimat'
+
+  SET 'arrKata' with 'kalimat'.split with parameter (' ')
+
+  DISPLAY length of 'arrKata'
+
+END FUNCTION
+
+CALL FUNTION 'hitungJumlahKata()' with parameter value "I have a dream"
+CALL FUNTION 'hitungJumlahKata()' with parameter value "Never eat shredded wheat or cake"
+CALL FUNTION 'hitungJumlahKata()' with parameter value "A song to sing"
+CALL FUNTION 'hitungJumlahKata()' with parameter value "I"
+CALL FUNTION 'hitungJumlahKata()' with parameter value "I believe I can code"

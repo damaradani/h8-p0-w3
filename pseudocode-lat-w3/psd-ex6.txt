@@ -1,0 +1,33 @@
+//Pseudocode Exercise 6 week 3 - Palindrome Angka
+
+CREATE FUNCTION 'angkaPalindrome' with parameter 'num'
+
+    SET 'numStr' with 'num' CONVERT to STRING
+
+    IF first index of 'numStr' equals with the last index of 'numStr' then
+        SET 'i' with 'num'
+
+        FOR 'i' to infinity DO
+
+            IF first index of 'i' equals with the last index of 'i' then
+                DISPLAY 'i' added by 1
+                END the FUNCTION
+
+        END FOR
+    ELSE
+        SET 'j' with 'num'
+
+        FOR 'j' to infinity DO
+
+            IF first index of 'j' equals with the last index of 'j' then
+                DISPLAY 'j' added by 1
+                END the FUNCTION
+        END FOR
+
+END FUNCTION
+
+CALL FUNTION 'angkaPalindrome()' with parameter value 8
+CALL FUNTION 'angkaPalindrome()' with parameter value 10
+CALL FUNTION 'angkaPalindrome()' with parameter value 117
+CALL FUNTION 'angkaPalindrome()' with parameter value 175
+CALL FUNTION 'angkaPalindrome()' with parameter value 1000

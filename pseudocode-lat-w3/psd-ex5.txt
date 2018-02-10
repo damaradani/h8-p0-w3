@@ -1,0 +1,25 @@
+//Pseudocode Exercise 5 week 3 - Palindrome
+
+CREATE FUNCTION 'palindrome' with parameter 'kata'
+
+    SET 'balikKata' with ''
+    SET 'i' with length of 'kata' minus by 1
+
+    FOR 'i' to 0 DO
+        STORE 'balikKata' with 'balikKata' + 'kata' index of 'i'
+    END FOR
+
+    IF 'balikKata' equals with 'kata' then
+        DISPLAY true
+    ELSE
+        DISPLAY false
+    END IF
+
+END FUNCTION
+
+
+CALL FUNTION 'palindrome()' with parameter value "katak"
+CALL FUNTION 'palindrome()' with parameter value "blanket"
+CALL FUNTION 'palindrome()' with parameter value "civic"
+CALL FUNTION 'palindrome()' with parameter value "kasur rusak"
+CALL FUNTION 'palindrome()' with parameter value "mister"

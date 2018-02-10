@@ -1,0 +1,27 @@
+//Pseudocode Exercise 14 week 3 - Mengelompokkan Angka
+
+CREATE FUNCTION 'mengelompokkanAngka()' with parameter 'arr'
+
+    SET 'newArr' with empty array with 3 empty array // contoh : [[],[],[]]
+
+    FOR each index of 'arr' DO
+
+        IF 'arr[current index]' modulo 3 equals with 0 then
+            STORE 'newArr[2]' with 'arr[current index]'
+        ELSE IF 'arr[current index]' modulo 2 not equals with 0 then
+            STORE 'newArr[1]' with 'arr[current index]'
+        ELSE
+            STORE 'newArr[0]' with 'arr[current index]'
+        END IF
+
+    END FOR
+
+    DISPLAY 'newArr'
+
+END FUNCTION
+
+
+CALL FUNTION 'mengelompokkanAngka()' with parameter value [2, 4, 6]
+CALL FUNTION 'mengelompokkanAngka()' with parameter value [1, 2, 3, 4, 5, 6, 7, 8, 9]
+CALL FUNTION 'mengelompokkanAngka()' with parameter value [100, 151, 122, 99, 111]
+CALL FUNTION 'mengelompokkanAngka()' with parameter value []
