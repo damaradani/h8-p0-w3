@@ -4,8 +4,11 @@ SET 'input' with "hello world!"
 
 CREATE FUNCTION 'balikString' with parameter 'input'
     SET 'balikKata' with ""
-    FOR each word/letter in 'input' DO
-        STORE 'balikKata' ADD with last word/letter from 'input'
+    SET 'i' with length of 'input'
+
+    FOR 'i' to 0 DO
+        STORE 'balikKata' with 'balikKata' + 'input' index of 'i'
+
     END FOR
 
     IF 'balikKata' equals with 'input' then
@@ -16,3 +19,8 @@ CREATE FUNCTION 'balikString' with parameter 'input'
 
 
 CALL FUNCTION balikString(input)
+berarti di bawah
+>STORE 'balikKata' ADD with last word/letter from 'input'
+
+di tambahin ini?
+>last word push by 1

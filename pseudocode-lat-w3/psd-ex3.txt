@@ -1,0 +1,22 @@
+//Pseudocode Exercise 3 week 3 Looping Data Array
+
+SET 'input' with array [
+                          ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
+                          ["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
+                          ["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
+                          ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
+                       ]
+
+
+CREATE FUNCTION 'dataHandling' with parameter 'input'
+
+    FOR each index of 'input' DO
+        DISPLAY "Nomor iD: " + [current index][0] of array 'input'
+        DISPLAY "Nama Lengkap: " + [current index][1] of array 'input'
+        DISPLAY "TTL: " + [current index][2] of array 'input' + " " + [current index][3] of array 'input'
+        DISPLAY "Hobi: " + [current index][4] of array 'input'
+    END FOR
+
+END FUNCTION
+
+CALL FUNCTION dataHandling(input)  
