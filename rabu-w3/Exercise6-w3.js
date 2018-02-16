@@ -2,36 +2,36 @@
 //palindrome angka atau kata yang jika dibalik hasilny tetap sama
 
 function angkaPalindrome (num) {
-  var arrNum = '';
-  arrNum += num;
+  /*Kalo Pake Looping
+  var reverseNum = String(num).split('').reverse().join('');
 
-  if(arrNum[0] === arrNum[arrNum.length - 1]){
-    num += 1;
-    for(var i = num; i >= arrNum; i++){
-      var hasil = '';
-      hasil += i;
-      if (hasil[0] === hasil[hasil.length - 1]){
-        //console.log(num);
-        //console.log(arrNum2);
-        return parseInt(hasil);
-        //break;
-      }
-
+  if(num == reverseNum){
+    for(let i = num+1; i >= num; i++){
+        reverseNum = String(i).split('').reverse().join('');
+        if(reverseNum == i){
+            return i;
+        }
     }
   }else{
-    //num += 1;
-    for(var i = num; i >= arrNum; i++){
-      var hasil = '';
-      hasil += i;
-      if (hasil[0] === hasil[hasil.length - 1]){
-        //console.log(num);
-        //console.log(arrNum2);
-        return parseInt(hasil);
-        //break;
+      for(let i = num+1; i >= num; i++){
+          reverseNum = String(i).split('').reverse().join('');
+          if(reverseNum == i){
+              return i;
+          }
       }
-    }
   }
-  //console.log(tes[0]+' tes '+tes[tes.length -1]);
+  */
+
+  //Kalo pake Recursive
+  var reverseNum = String(num+1).split('').reverse().join('');
+  num++;
+
+  if(reverseNum == num){
+      return num;
+  }else{
+      return angkaPalindrome(num);
+  }
+
 }
 
 // TEST CASES
