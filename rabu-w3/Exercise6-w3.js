@@ -23,9 +23,19 @@ function angkaPalindrome (num) {
   */
 
   //Kalo pake Recursive
-  var reverseNum = String(num+1).split('').reverse().join('');
+  //var reverseNum = String(num+1).split('').reverse().join('');
   num++;
+  var numStr = String(num);
+  var reverseNum = '';
+  for(var i = numStr.length-1; i >= 0; i--){
+      reverseNum += numStr[i];
+  }
 
+  if(reverseNum == num){
+      return num;
+  }else{
+      return angkaPalindrome(num);
+  }
   if(reverseNum == num){
       return num;
   }else{
